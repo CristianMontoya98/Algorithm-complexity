@@ -1,7 +1,8 @@
+//Complejidad temporal -> O(n^2)
 function selectionSort(arreglo) {
   let longitud = arreglo.length; // O(1)
 
-  for (let i = 0; i < longitud; i++) { // O(n^2)
+  for (let i = 0; i < longitud; i++) { // O(n)
     let minimo = i; // O(1)
     for (let j = i + 1; j < longitud; j++) { // O(n)
       if (arreglo[j] < arreglo[minimo]) { // O(1)
